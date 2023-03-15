@@ -1,0 +1,14 @@
+.block-timer{
+	background: black;
+	width: 300px;
+	text-align: center;
+	height: 300px;
+}
+
+#timer{
+	font-size: 60px;
+	color: white;
+	padding-top: 150px;
+	
+
+}

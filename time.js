@@ -5,15 +5,17 @@ let myTime=document.getElementById('myTime');
 
 	let stopTime=document.getElementById('stopTime');
 		stopTime.addEventListener('click',stopTimres);
+
 	function stopTimres(){
 		window.clearInterval(window.timerId);
 		
-		document.body.style.background='green';
-		if(document.body.style.background=='green'){
-			let blockTimer=document.getElementById('block')
-			blockTimer.style.background='yellow';
+		// document.body.style.background='green';
 
-		}
+		// if(document.body.style.background=='green'){
+		// 	let blockTimer=document.getElementById('block')
+		// 	blockTimer.style.background='yellow';
+
+		// }
 
 	}
 	function stop(){
@@ -27,9 +29,14 @@ let myTime=document.getElementById('myTime');
 			}
 
 	function funcTime(){
-		window.timerId=window.setInterval(timers,1000)
+	window.timerId=window.setInterval(timers,1000);
+
+
+
 		function timers(){
 			let timer=document.getElementById('timer');
+			let indecator=document.getElementById('indecator');
+				indecator.style.width=timer.innerHTML+'px';
 
 		let num=parseInt(timer.innerHTML)-1;
 		timer.innerHTML=num;
@@ -40,3 +47,14 @@ let myTime=document.getElementById('myTime');
 		}
 		}
 	}
+
+	
+
+
+
+	let  doc = document.body;
+		doc.addEventListener('mousemove',docWin);
+
+		function docWin(event){
+			this.style.background='#'+event.clientX;
+		}

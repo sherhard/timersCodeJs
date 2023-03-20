@@ -7,16 +7,27 @@
 	<title>time</title>
 </head>
 <body>
-	<div id="myTimer">
-		<button id="myTime">time</button>
-		<input type="text" placeholder="Введите таймер" id="numberTimer" value="">
-		<div class="block-timer" id="block">
-			<p id="timer"></p>
+<div class="wrapper">
+		<div id="myTimer" class="myTimer">
+
+		
+
+		<div>
+			<input type="text" placeholder="секундомер" id="numberTimer" class="textTime" value="">
 		</div>
-		<div class="stop">
-			<button id="stopTime">stop</button>
+
+		<div class="block-timer" id="block">
+			<p id="timer" class="timer" value=""></p>
+			<div class="indecator_timer" id="indecator" value=" "></div>
+		</div>
+		
+
+		<div class="button_click">
+			<button id="myTime" class="startTime">start</button>
+			<button id="stopTime" class="startTime">stop</button>
 		</div>
 	</div>
+</div>
 	
 	<script src="time.js"></script>
 </body>
